@@ -1,32 +1,116 @@
 <!DOCTYPE html>
-<html>
-<head> 
-	<title>Vlad Veselov</title>
-	<link rel="stylesheet" href="main.css">
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vlad Veselov QA Engineer</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            text-align: center;
+            background: linear-gradient(to top, #00aaff, #0044cc); /* Gradient from blue to dark blue */
+            overflow: hidden;
+        }
+
+        .background {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.example.com/your-image.jpg') no-repeat center center;
+            background-size: cover;
+            z-index: -1;
+            animation: moveBackground 20s linear infinite;
+        }
+
+        @keyframes moveBackground {
+            from {background-position: 0 0;}
+            to {background-position: -1000px 0;}
+        }
+
+        .container {
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        .profile-photo {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-top: 10px;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            color: #ffdd57;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+
+        .tools {
+            margin-top: 30px;
+            font-size: 1.2em;
+        }
+
+        .tools span {
+            background: #0044cc;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 5px;
+            display: inline-block;
+        }
+
+        .social-links {
+            margin-top: 30px;
+        }
+
+        .social-links a {
+            color: #fff;
+            font-size: 1.5em;
+            margin: 0 15px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #ffdd57;
+        }
+    </style>
 </head>
-
-<body class="container">
-		<h1>Влад Веселов</h1>
-
-		<div class="item">
-			<img class="photo" src="me.png" width="170" height="170" alt="фото">
-		</div>
-
-			<p>Открыт к диалогу</p>
-
-			<h2>Обо мне</h2>
-
-			<div class="contacts">
-
-				<a href="http://t.me/Vlad_veselov1995">telegram</a> 
-				<br>
-				<a href="Vladveselov95@yandex.ru">email</a>
-				<br>
-				<a href="https://github.com/Vladvselo">github.com</a>
-			</div>
-				<button type="button">Кредо</button>
-				<script type="text/javascript" src="js.js"></script>
-
+<body>
+    <div class="background"></div>
+    
+    <div class="container">
+        <img src="me.jpg" alt="Мое фото" class="profile-photo">
+        <h1>QA Engineer</h1>
+        <p>Привет! Я QA Engineer с опытом работы в автоматизации и ручном тестировании. Умею находить баги там, где их никто не ожидает!</p>
+        
+        <div class="tools">
+            <h3>Инструменты, которыми я владею:</h3>
+            <span>Postman</span>
+            <span>Selenium</span>
+            <span>JIRA</span>
+            <span>Git</span>
+            <span>Java</span>
+            <!-- Добавьте свои инструменты -->
+        </div>
+        
+        <div class="social-links">
+            <a href="https://t.me/Vlad_veselov1995" target="_blank">Telegram</a>
+            <a href="https://vk.com/vlad_veselov" target="_blank">ВКонтакте</a>
+            <a href="https://github.com/Vladvselo" target="_blank">GitHub</a>
+            <a href="mailto:Vladveselov95@yandex.ru">Email</a>
+        </div>
+    </div>
 </body>
-
 </html>
